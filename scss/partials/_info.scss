@@ -1,0 +1,161 @@
+/* ----------------------- INFO SECTION STYLE ----------------------- */
+.info__section{
+
+    .info__section__wrapper{
+        padding: 50px 0;
+    }
+
+    .info__section__header{
+        margin-bottom: 60px;
+    }
+
+    .info__section__title{
+        color: #709DCA;
+        margin-bottom: 10px;
+    }
+
+    .info__section__description{
+        color: #394B50;
+    }
+
+    .info__section__content{
+        display: grid;
+        grid-row-gap: 50px;
+    }
+
+    .info__content__item{
+        text-align: center;
+    }
+
+    .info__item__icon{
+        margin-bottom: 30px;
+
+        .fa{
+            font-size: 50px;
+            color: #709DCA;
+        }
+
+    }
+
+    .info__content__item:first-of-type{
+        .info__item__icon{
+            .fa{
+                color: #FFC155;
+            }
+        }
+    }
+
+    .info__item__text{
+
+        h5{
+            font-family: $font-lato;
+            font-weight: bold;
+            font-size: 1.23rem;
+            line-height: 1.1;
+            color: #394B50;
+            margin-bottom: 20px;
+        }
+
+        p{
+            color: #7B7B7B;
+        }
+    }
+
+}
+
+// ----------------------- SM BREAKPOINT ----------------------- //
+@media(min-width: 576px){
+    
+    .info__section{
+
+        .info__section__wrapper{
+            padding: 70px 0;
+        }
+    
+        .info__section__header{
+            margin-bottom: 70px;
+        }
+    
+        .info__section__content{
+            grid-template-columns: 1fr 1fr;
+            grid-column-gap: 40px;
+            grid-row-gap: 60px;
+        }
+    }
+}
+
+// ----------------------- MD BREAKPOINT ----------------------- //
+@media(min-width: 768px){
+    
+    .info__section{
+
+        .info__section__wrapper{
+            padding: 80px 0 94px;
+        }
+    
+        .info__section__header{
+            margin-bottom: 90px;
+        }
+    
+        .info__section__content{
+            grid-row-gap: 80px;
+        }
+    
+        .info__content__item{
+            display: flex;
+            text-align: left;
+        }
+    
+        .info__item__icon{
+            margin: 0 24px;
+            text-align: center;
+    
+            .fa{
+                font-size: 32px;
+            }
+    
+        }
+    
+    }
+    
+}
+
+// ----------------------- LG BREAKPOINT ----------------------- //
+@media(min-width: 992px){
+    
+    .info__section{
+
+        .info__section__content{
+            grid-row-gap: 80px;
+            grid-column-gap: 65px;
+        }
+    
+        .info__content__item{
+            display: flex;
+            text-align: left;
+        }
+    
+        .info__item__icon{
+            margin: 0 24px;
+            text-align: center;
+    
+            .fa{
+                font-size: 32px;
+            }
+    
+        }
+    
+    }
+    
+}
+
+// ----------------------- XL BREAKPOINT ----------------------- //
+@media(min-width: 1200px){
+    
+    .info__section{
+
+        .info__section__content{
+            grid-column-gap: 90px;
+        }
+    }
+}// -------------------------- END --------------------------- //

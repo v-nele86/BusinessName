@@ -1,0 +1,103 @@
+/* ============================ GENERAL STYLE ============================ */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 13px;
+}
+
+body{
+    font-family: $font-opensans;
+}
+
+img{
+    max-width: 100%;
+}
+
+a{
+    text-decoration: none;
+    &:hover{
+        text-decoration: none;
+    }
+}
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+// ==========================
+// Section style
+// ==========================
+
+.section__header{
+    text-align: center;
+    font-family: $font-opensans;
+    margin: 0 auto;
+    max-width: 90%;
+}
+
+.section__title{
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+
+.sectio__decription{
+    font-size: 1.23rem;
+    line-height: 1.1;
+}
+
+/* ============================ SM BREAKPOINT ============================ */
+@media(min-width : 576px){
+
+    .container{
+        width: 550px;
+        padding: 0;
+    }
+
+    .section__header{
+        max-width: 500px;
+    }
+
+}
+
+/* ============================ MD BREAKPOINT ============================ */
+@media(min-width : 768px){
+
+    .container{
+        width: 750px;
+    }
+    .section__header{
+        max-width: 650px;
+    }
+
+}
+
+/* ============================ LG BREAKPOINT ============================ */
+@media(min-width : 992px){
+
+    .container{
+        width: 970px;
+    }
+
+    .section__header{
+        max-width: 800px;
+    }
+
+}
+
+/* ============================ XL BREAKPOINT ============================ */
+@media(min-width : 1200px){
+
+    .container{
+        width: 1170px;
+        padding: 0;
+    }
+
+}
